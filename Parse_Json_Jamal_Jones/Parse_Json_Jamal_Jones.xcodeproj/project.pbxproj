@@ -16,6 +16,8 @@
 		02C238A529534E0E0053AF3A /* Parse_Json_Jamal_JonesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C238A429534E0E0053AF3A /* Parse_Json_Jamal_JonesTests.swift */; };
 		02C238AF29534E0E0053AF3A /* Parse_Json_Jamal_JonesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C238AE29534E0E0053AF3A /* Parse_Json_Jamal_JonesUITests.swift */; };
 		02C238B129534E0E0053AF3A /* Parse_Json_Jamal_JonesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C238B029534E0E0053AF3A /* Parse_Json_Jamal_JonesUITestsLaunchTests.swift */; };
+		02C238BF29534EBF0053AF3A /* SampleJSONDragon.json in Resources */ = {isa = PBXBuildFile; fileRef = 02C238BD29534EBF0053AF3A /* SampleJSONDragon.json */; };
+		02C238C029534EBF0053AF3A /* SampleJSONGlaceon.json in Resources */ = {isa = PBXBuildFile; fileRef = 02C238BE29534EBF0053AF3A /* SampleJSONGlaceon.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		02C238AA29534E0E0053AF3A /* Parse_Json_Jamal_JonesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Parse_Json_Jamal_JonesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C238AE29534E0E0053AF3A /* Parse_Json_Jamal_JonesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parse_Json_Jamal_JonesUITests.swift; sourceTree = "<group>"; };
 		02C238B029534E0E0053AF3A /* Parse_Json_Jamal_JonesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parse_Json_Jamal_JonesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		02C238BD29534EBF0053AF3A /* SampleJSONDragon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleJSONDragon.json; sourceTree = "<group>"; };
+		02C238BE29534EBF0053AF3A /* SampleJSONGlaceon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleJSONGlaceon.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		02C2388C29534E0C0053AF3A /* Parse_Json_Jamal_Jones */ = {
 			isa = PBXGroup;
 			children = (
+				02C238BD29534EBF0053AF3A /* SampleJSONDragon.json */,
+				02C238BE29534EBF0053AF3A /* SampleJSONGlaceon.json */,
 				02C2388D29534E0C0053AF3A /* AppDelegate.swift */,
 				02C2388F29534E0C0053AF3A /* SceneDelegate.swift */,
 				02C2389129534E0C0053AF3A /* ViewController.swift */,
@@ -231,9 +237,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02C238BF29534EBF0053AF3A /* SampleJSONDragon.json in Resources */,
 				02C2389A29534E0D0053AF3A /* LaunchScreen.storyboard in Resources */,
 				02C2389729534E0D0053AF3A /* Assets.xcassets in Resources */,
 				02C2389529534E0C0053AF3A /* Main.storyboard in Resources */,
+				02C238C029534EBF0053AF3A /* SampleJSONGlaceon.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
