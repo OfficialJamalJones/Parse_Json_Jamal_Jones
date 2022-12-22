@@ -11,18 +11,30 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var dragonModel = DragonDataModel()
     var glaceonModel = GlaceonDataModel()
     let encoder = JSONEncoder()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.dragonModel.loadJson(filename: "SampleJSONDragon")
         self.glaceonModel.loadJson(filename: "SampleJSONGlaceon")
-        self.printGlaceon()
+        self.printDragon()
+        //self.printGlaceon()
         
     }
     
+    func printDragon() {
+        print("Dragon: \(String(describing: self.dragonModel.dragon))")
+        if let encoded = try? self.encoder.encode(self.dragonModel) {
+            if let json = String(data: encoded, encoding: .utf8) {
+                //print("\nDragon Json: \(json)")
+            }
+        }
+    }
+    
     func printGlaceon() {
-        print("Glaceon: \(self.glaceonModel.glaceon)")
+        print("Glaceon: \(String(describing: self.glaceonModel.glaceon))")
         if let encoded = try? self.encoder.encode(self.glaceonModel) {
             if let json = String(data: encoded, encoding: .utf8) {
                 //print("\nGlaceon Json: \(json)")

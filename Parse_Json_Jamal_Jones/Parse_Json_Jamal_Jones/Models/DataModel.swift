@@ -8,6 +8,28 @@
 import UIKit
 import Foundation
 
+struct DragonDataModel:Codable {
+    
+    var dragon:Dragon?
+    
+    mutating func loadJson(filename fileName: String) {
+        
+        if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: url)
+                let decoder = JSONDecoder()
+                let jsonData = try decoder.decode(Dragon.self, from: data)
+                self.dragon = jsonData
+            } catch {
+                print("error:\(error)")
+            }
+        }
+        
+    }
+
+    
+}
+
 struct GlaceonDataModel:Codable {
     
     var glaceon:Glaceon?
@@ -29,6 +51,3 @@ struct GlaceonDataModel:Codable {
 
     
 }
-
-
-
