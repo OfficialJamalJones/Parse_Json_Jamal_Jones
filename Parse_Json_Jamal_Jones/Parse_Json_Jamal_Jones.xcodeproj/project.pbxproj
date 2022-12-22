@@ -18,6 +18,8 @@
 		02C238B129534E0E0053AF3A /* Parse_Json_Jamal_JonesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C238B029534E0E0053AF3A /* Parse_Json_Jamal_JonesUITestsLaunchTests.swift */; };
 		02C238BF29534EBF0053AF3A /* SampleJSONDragon.json in Resources */ = {isa = PBXBuildFile; fileRef = 02C238BD29534EBF0053AF3A /* SampleJSONDragon.json */; };
 		02C238C029534EBF0053AF3A /* SampleJSONGlaceon.json in Resources */ = {isa = PBXBuildFile; fileRef = 02C238BE29534EBF0053AF3A /* SampleJSONGlaceon.json */; };
+		02C56CC0295382FD00B63C98 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C56CBF295382FD00B63C98 /* DataModel.swift */; };
+		02C56CC4295389A600B63C98 /* Glaceon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C56CC3295389A600B63C98 /* Glaceon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		02C238B029534E0E0053AF3A /* Parse_Json_Jamal_JonesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parse_Json_Jamal_JonesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		02C238BD29534EBF0053AF3A /* SampleJSONDragon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleJSONDragon.json; sourceTree = "<group>"; };
 		02C238BE29534EBF0053AF3A /* SampleJSONGlaceon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleJSONGlaceon.json; sourceTree = "<group>"; };
+		02C56CBF295382FD00B63C98 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		02C56CC3295389A600B63C98 /* Glaceon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glaceon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,14 +107,12 @@
 		02C2388C29534E0C0053AF3A /* Parse_Json_Jamal_Jones */ = {
 			isa = PBXGroup;
 			children = (
+				02C56CBE2953825800B63C98 /* Views */,
+				02C56CBD2953824F00B63C98 /* Controllers */,
+				02C56CBC2953824400B63C98 /* Models */,
 				02C238BD29534EBF0053AF3A /* SampleJSONDragon.json */,
 				02C238BE29534EBF0053AF3A /* SampleJSONGlaceon.json */,
-				02C2388D29534E0C0053AF3A /* AppDelegate.swift */,
-				02C2388F29534E0C0053AF3A /* SceneDelegate.swift */,
-				02C2389129534E0C0053AF3A /* ViewController.swift */,
-				02C2389329534E0C0053AF3A /* Main.storyboard */,
 				02C2389629534E0D0053AF3A /* Assets.xcassets */,
-				02C2389829534E0D0053AF3A /* LaunchScreen.storyboard */,
 				02C2389B29534E0D0053AF3A /* Info.plist */,
 			);
 			path = Parse_Json_Jamal_Jones;
@@ -131,6 +133,34 @@
 				02C238B029534E0E0053AF3A /* Parse_Json_Jamal_JonesUITestsLaunchTests.swift */,
 			);
 			path = Parse_Json_Jamal_JonesUITests;
+			sourceTree = "<group>";
+		};
+		02C56CBC2953824400B63C98 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				02C56CBF295382FD00B63C98 /* DataModel.swift */,
+				02C56CC3295389A600B63C98 /* Glaceon.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		02C56CBD2953824F00B63C98 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				02C2388D29534E0C0053AF3A /* AppDelegate.swift */,
+				02C2388F29534E0C0053AF3A /* SceneDelegate.swift */,
+				02C2389129534E0C0053AF3A /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		02C56CBE2953825800B63C98 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02C2389329534E0C0053AF3A /* Main.storyboard */,
+				02C2389829534E0D0053AF3A /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +297,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				02C2389229534E0C0053AF3A /* ViewController.swift in Sources */,
+				02C56CC0295382FD00B63C98 /* DataModel.swift in Sources */,
+				02C56CC4295389A600B63C98 /* Glaceon.swift in Sources */,
 				02C2388E29534E0C0053AF3A /* AppDelegate.swift in Sources */,
 				02C2389029534E0C0053AF3A /* SceneDelegate.swift in Sources */,
 			);
