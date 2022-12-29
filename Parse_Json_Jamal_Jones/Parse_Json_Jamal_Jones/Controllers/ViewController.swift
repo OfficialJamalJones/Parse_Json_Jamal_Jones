@@ -11,6 +11,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let parser = Parser()
+    //var dragonModel = Parser.parseJson(fileName: "SampleJSONDragon", fileExtension: "json") as! DragonDataModel
     var dragonModel = DragonDataModel()
     var glaceonModel = GlaceonDataModel()
     let encoder = JSONEncoder()
